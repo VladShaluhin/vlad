@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp = require('gulp'),
-    jshint = require('gulp-jshint'),
+    // jshint = require('gulp-jshint'),
     browserify = require('gulp-browserify'),
     concat = require('gulp-concat'),
     rimraf = require('gulp-rimraf'),
@@ -38,8 +38,9 @@ gulp.task('clean', function() {
 // JSHint task
 gulp.task('lint', function() {
   gulp.src('app/scripts/*.js')
-  .pipe(jshint())
-  .pipe(jshint.reporter('default'));
+  // .pipe(jshint())
+  // .pipe(jshint.reporter('default'))
+  ;
 });
 
 // Styles task
